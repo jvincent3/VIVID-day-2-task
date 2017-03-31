@@ -1,0 +1,60 @@
+<html>
+<head>
+<link href="main.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+
+</head>
+
+<body>
+	<div class="card">
+    <div>
+      <div class="name">Bank</div>
+      <div class="chip"></div>
+      <div class="cn">1234 5678 9098 7654</div>
+      <div class="one">1234</div>
+      <div class="MY">MONTH/YEAR</div>
+      <div class="vt">VALID THRU</div>
+      <div class="MMYY">12/99</div>
+      <div class="oName">CARDHOLDER</div>
+      </div>
+    </div>
+
+
+	<h2>Account information</h2>
+	<form action="">
+	<div class="container" >
+	<label>First Name</label>
+	<input placeholder="First Name" required><br>
+	<label>Last Name</label>
+	<input placeholder="Last Name" required><br>
+	<label>Email Address</label>
+	<input placeholder="johndoe@hotmail.com" required><br>
+	<!--<label>Country</label>
+	<select>-->
+		
+	</select>
+
+	<h2>Billing information</h2>
+	
+	<!--<label>Card Type</label>
+	<input type="radio"><input type="radio"><input type="radio"><input type="radio"><br> -->
+	<label>Card number</label>
+	<input id="cc" placeholder="1234 5678 9876 5432" required><br>
+	<label>Expiration date</label>
+	<input id="exp-date" type="text" placeholder="MM/YY" required><br>
+	<label>CCV</label>
+	<input id="cvc" placeholder="CCV" required><br>
+	<label>Card holder</label>
+	<input placeholder="Name of the card owner" required><br>
+	<button>Submit</button>
+	</div>
+	</form>
+	
+	<script>
+		$('#cc').inputmask("9999 9999 9999 9999")
+		$('#exp-date').inputmask("99/99");
+		$('#cvc').inputmask("999");
+	</script>
+</body>
+</html>

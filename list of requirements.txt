@@ -1,0 +1,13 @@
+Account information
+	First name
+	Last name
+	Email Address
+	Country
+Billing information
+	Card Type
+	Card number
+
+	Expiration date
+	CCV
+	card holder
+submit
